@@ -12,6 +12,7 @@ This project demonstrates a simple **Redis caching application** using:
 - Retrieve values by key from Redis.
 - Simple UI to interact with the application.
 - Uses Docker Compose for easy deployment.
+![image](https://github.com/user-attachments/assets/af3251b5-aa08-4808-9d20-76dfc4be6579)
 
 ---
 
