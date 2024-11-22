@@ -97,7 +97,7 @@ Retrieves the value of a key from Redis.
 2. **Set up environment variables**:
    Create a `.env` file in the root directory and add your Redis endpoint:
    ```env
-   REDIS_ENDPOINT=master.board-redis-cluster.ozdo2v.apn2.cache.amazonaws.com:6582
+   REDIS_ENDPOINT=<ElastiCache Endpoint:port>
    ```
 
 3. **Start the application**:
