@@ -73,7 +73,7 @@
         options.body = JSON.stringify(body);
       }
       try {
-        const response = await fetch(`http://3.34.132.112:8000${endpoint}`, options); 
+        const response = await fetch(`http://<Public IP>:8000${endpoint}`, options); 
         const data = await response.json();
         document.getElementById("response").textContent = JSON.stringify(data, null, 2);
       } catch (error) {
