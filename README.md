@@ -55,6 +55,8 @@ Stores a key-value pair in Redis with a TTL of 60 seconds.
 
 ### **2. GET `/get/{key}`**
 Retrieves the value of a key from Redis.
+![image](https://github.com/user-attachments/assets/8388b2af-ea39-4f59-8af0-efcade4ef94c)
+
 
 - **Request**:
   ```
