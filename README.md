@@ -23,3 +23,17 @@ USER
          └──> Backend (FastAPI)
                   │
                   └──> AWS ElastiCache (Redis)
+
+---
+
+## **API Endpoints**
+
+### **1. POST `/set`**
+Stores a key-value pair in Redis with a TTL of 60 seconds.
+
+- **Request**:
+  ```json
+  {
+    "key": "test",
+    "value": "12345"
+  }
