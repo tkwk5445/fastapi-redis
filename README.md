@@ -97,15 +97,25 @@ Retrieves the value of a key from Redis.
 2. **Set up environment variables**:
    Create a `.env` file in the root directory and add your Redis endpoint:
    ```env
-   REDIS_ENDPOINT=<ElastiCache Endpoint:port>
+   REDIS_ENDPOINT=master.board-redis-cluster.ozdo2v.apn2.cache.amazonaws.com:6582
    ```
 
-3. **Start the application**:
+3. **Update `frontend/index.html`**:
+   Replace `<Public IP>` in the following line with your backend's public IP address:
+   ```javascript
+   const response = await fetch(`http://<Public IP>:8000${endpoint}`, options);
+   ```
+   Example:
+   ```javascript
+   const response = await fetch(`http://3.34.132.112:8000${endpoint}`, options);
+   ```
+
+4. **Start the application**:
    ```bash
    docker-compose up --build
    ```
 
-4. **Access the application**:
+5. **Access the application**:
    Open your browser and navigate to:
    ```
    http://<your-instance-ip>:8080
@@ -142,3 +152,25 @@ Retrieves the value of a key from Redis.
 - **Backend**: FastAPI (Python).
 - **Cache Layer**: AWS ElastiCache (Redis).
 - **Deployment**: Docker Compose.
+
+---
+
+## **Contributing**
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Submit a pull request.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## **Contact**
+For any questions or issues, please reach out to:
+- **Name**: [Your Name]
+- **Email**: [Your Email]
+- **GitHub**: [Your GitHub Profile]
