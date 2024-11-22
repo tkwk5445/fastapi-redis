@@ -37,7 +37,7 @@ USER
 ### **1. POST `/set`**
 Stores a key-value pair in Redis with a TTL of 60 seconds.
 
-![image](https://github.com/user-attachments/assets/af3251b5-aa08-4808-9d20-76dfc4be6579)
+<img src="https://github.com/user-attachments/assets/af3251b5-aa08-4808-9d20-76dfc4be6579" alt="POST API Example" width="600">
 
 - **Request**:
   ```json
@@ -57,7 +57,7 @@ Stores a key-value pair in Redis with a TTL of 60 seconds.
 
 ### **2. GET `/get/{key}`**
 Retrieves the value of a key from Redis.
-![image](https://github.com/user-attachments/assets/8388b2af-ea39-4f59-8af0-efcade4ef94c)
+<img src="https://github.com/user-attachments/assets/8388b2af-ea39-4f59-8af0-efcade4ef94c" alt="GET API Example" width="600">
 
 
 - **Request**:
